@@ -1,0 +1,429 @@
+/* Common css start  */
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-center{
+    align-items: center;
+}
+/* common css end  */
+
+/* header section start  */
+#header{
+    background: #0b1016;
+}
+#header .header-first{
+    text-align: left;
+    width: 50%;
+}
+#header .header-first p, #header .header-last p {
+    color: #fefefe;
+    font-size: 16px;
+    padding: 19px 0;
+    font-weight: 400;
+    font-family: Ubuntu;
+}
+#header .header-last{
+    text-align: right;
+    width: 50%;
+}
+
+
+/* header section end  */
+
+/* navigation section start */
+
+#navigation{
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 999999;
+}
+#navigation .logo{
+    width: 30%;
+}
+#navigation .menu{
+    width: 70%;
+}
+#navigation .menu ul{
+    text-align: right;
+}
+
+#navigation .menu ul li{
+    display: inline-block;
+    position: relative;
+}
+#navigation .menu ul li a i{
+    border: none;
+    color: #222222 ;
+}
+#navigation .menu ul li a{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #222222;
+    font-family: Ubuntu;
+    padding: 40px 20px;
+    display: block;
+    transition: 0.3s;
+}
+#navigation ul li:hover a{
+    background-color: #fff9e6;
+    color: #ffc712;
+}
+
+#navigation .menu ul li ul{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+#navigation .menu ul li ul li a{
+    padding: 5px 10px;
+    color: black;
+}
+#navigation .menu ul li ul li:hover a{
+    background-color: #fff9e6;
+    color: #ffc712;
+}
+#navigation .menu ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+#navigation .menu ul li span{
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #888;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+    margin: 0 10px;
+}
+/* navigation section end */
+
+/* success section start  */
+#success{
+    background-image: url(..//images/Bizzency-Recovered.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 142px 0;
+}
+#success h4{
+    font-size: 50px;
+    color: #0f2f44;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+}
+#success h1{
+    font-size: 80px;
+    text-transform: uppercase;
+    font-family: 'Abril Fatface';
+    font-weight: 400;
+    color: #0f2f44;
+    margin-top: -20px;
+}
+
+#success h3{
+    font-size: 32px;
+    color: #8484bf;
+    text-transform: capitalize;
+    font-weight: 400;
+    letter-spacing: 18px;
+    font-family: 'Ubuntu';
+    margin-top: -10px;
+}
+#success p{
+    color: #444444;
+    font-size: 14px;
+    width: 466px;
+    margin: 20px 0 33px;
+}
+
+#success a{
+    font-size: 20px;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    color: #fff;
+    background-color: #8484bf;
+    padding: 16px 20px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    display: inline-block;
+    transition: 0.3s;
+}
+#success a:hover{
+    background-color: #fff9e6;
+    color: #ffc712;
+}
+
+#success span{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #888;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+    margin: 0 20px;
+}
+/* success section end  */
+
+/* about  section start */
+#about{
+    padding: 100px 0 50px;
+}
+#about .about-info{
+    width: 50%;
+    color: #0f2f44;
+}
+#about .about-info h6{
+    font-size: 16px;
+    font-family: 'Ubuntu';
+    font-weight: 300;  
+}
+#about .about-info h4{
+    font-size: 32px;
+    font-family: 'Abril Fatface';
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+#about .about-info p{
+    font-size: 16px;
+    width: 569px;
+    margin-bottom: 15px;
+}
+#about .about-info ul{
+    margin-left: 30px;
+}
+#about .about-info ul li{
+    padding: 15px 0;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+}
+#about .about-info a{
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 16px 19px;
+    color: #0f2f44;
+    background-color: #ffc712 ;
+    border-radius: 10px;
+    margin-right: 18px;
+    border: 1px solid #e3e3e3;
+    box-shadow: inset;
+    transition: 0.3s;
+}
+#about .about-info a:last-child{
+    background-color: #fff;
+    border: 2px solid #e3e3e3;
+    box-shadow: 5px 5px 15px #e2e2e2;
+}
+
+#about .about-info a:hover{
+    background-color: #fff9e6;
+    color: #ffc712;
+}
+
+#about .imagee{
+    width: 50%;
+    padding-left: 20px;
+}
+
+/* about  section end  */
+
+/* skill section start  */
+
+#skill{
+    padding: 50px 0;
+}
+
+#skill .imamge{
+    background-size: cover;
+    background-position: left;
+    width: 50%;
+}
+#skill .skil-info{
+    text-align: right;
+    color: #0f2f44;
+    width: 50%;
+}
+#skill .skil-info h6{
+    font-size: 14px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+}
+#skill .skil-info h4{
+    font-size: 32px;
+    font-family: 'Abril Fatface';
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+#skill .skil-info p{
+    font-size: 16px;
+    width: 565px;
+    margin-bottom: 35px;
+}
+
+#skill .skil-info ul li{
+    margin-bottom: 60px;
+    
+}
+
+#skill .skil-info ul li span{
+    float: right;
+    text-align: right;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: #fff;
+    cursor: pointer;
+    display: block;
+    box-shadow: #222222;
+}
+#skill .skil-info ul li span img{
+    text-align: center;
+    padding: 15px;
+}
+
+/* skill section end  */
+
+/* service section start here  */
+
+#service{
+    background-color: #f5f5f5;
+    padding-bottom: 60px;
+}
+#service .service-info{
+    padding: 60px 0;
+}
+#service .service-info h6{
+    font-size: 14px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    color: #0f2f44;
+    text-align: center;
+}
+#service .service-info h4{
+    font-size: 32px;
+    font-family: 'Abril Fatface';
+    font-weight: 400 ;
+    color: #0f2f44;
+    text-align: center;   
+}
+#service .serviceitem{
+    justify-content: space-between;
+}
+#service .serviceitem1{
+    width: 30%;
+    margin: 0 15px;
+    position: relative;
+}
+#service .serviceitem1 .overlay{
+    position: absolute;
+    background-color: #0f2f44;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    color: #fff;
+    border-radius: 10px;
+}
+#service .serviceitem1:hover .overlay{
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+#service .serviceitem1 .overlay p{
+    font-size: 20px;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    color: #fff;
+    padding: 20px 0 60px;
+}
+#service .serviceitem1 .overlay span{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #ffc712;
+    color: black;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+}
+#service .serviceitem1 .imagg{
+    padding: 60px 20px;
+    background-color: #e9e9e9;
+    border: 1px solid #e9e9e9;
+    height: 100%;
+    width: 30%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#service .serviceitem1 .hua{
+    color: #0f2f44;
+    background-color: #eeeeee;
+    padding: 28px 20px;
+    text-align: left;
+    width: 70%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#service .serviceitem1 .hua h3{
+    margin-bottom: 20px;
+}
+/* service section end here  */
+
+
+
+/* custom scrollbar  */
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background-color: #ffc712;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#909d36, #6083b7);
+    border-radius: 10px;
+}
+/* custom scrollbar  */
+
